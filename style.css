@@ -1,0 +1,174 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(246, 236, 208);
+            color: black;
+        }
+
+        .dashboard {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(255, 211, 91);
+            padding: 20px;
+            color: black;
+        }
+
+        .header h1 {
+            font-size: 24px;
+        }
+
+        .logout-btn {
+            background-color: rgb(255, 211, 91);
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .logout-btn:hover {
+            background-color: rgb(255, 181, 37);
+        }
+
+        .restaurant-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .restaurant {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .restaurant img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .restaurant h3 {
+            font-size: 18px;
+            padding: 10px;
+            background-color: rgb(255, 211, 91);
+            color: black;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .restaurant:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-container {
+            display: none;
+            background-color: #fff;
+            margin-top: 30px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #menu-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: rgb(255, 211, 91);
+        }
+
+        #menu-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .menu-item {
+            background-color: rgb(246, 236, 208);
+            padding: 15px;
+            border-radius: 8px;
+            width: calc(33% - 10px);
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .menu-item:hover {
+            background-color: rgb(255, 211, 91);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .add-to-cart-btn {
+            background-color: rgb(255, 211, 91);
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .add-to-cart-btn:hover {
+            background-color: rgb(255, 181, 37);
+        }
+
+        .cart {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: none;
+        }
+
+        .cart h3 {
+            font-size: 18px;
+            color: rgb(255, 211, 91);
+        }
+
+        .cart ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .cart ul li {
+            margin-bottom: 10px;
+        }
+
+        .cart-btn {
+            background-color: rgb(255, 211, 91);
+            color: black;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .cart-btn:hover {
+            background-color: rgb(255, 181, 37);
+        }
+
+    
