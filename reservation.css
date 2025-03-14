@@ -60,22 +60,29 @@ select {
   text-align: center;
 }
 
+/* Updated Button Styles */
 .btn input[type="submit"],
-.btn input[type="button"] {
+.btn input[type="button"],
+.submit-btn,
+.close-btn {
   padding: 10px 20px;
-  background: linear-gradient(135deg, #BFECFF, #CDC1FF, #FFF6E3, #FFCCEA);
-  color: black;
+  background-color: rgb(255, 211, 91); /* New button color */
+  color: white; /* Text color */
   text-transform: uppercase;
   font-weight: bold;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
+/* Hover State for Buttons */
 .btn input[type="submit"]:hover,
-.btn input[type="button"]:hover {
-  background: linear-gradient(135deg, #a8dfff, #b8a9ff, #ffe8c2, #ffb3d9);
+.btn input[type="button"]:hover,
+.submit-btn:hover,
+.close-btn:hover {
+  background-color: rgb(255, 181, 37); /* New hover color */
 }
 
 .hidden {
@@ -114,4 +121,23 @@ select {
 
 .modal-content h2 {
   margin-bottom: 15px;
+}
+
+/* Additional Styles for Feedback Container */
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: none;
+  height: 100px;
+}
+
+#error_message {
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #BFECFF, #CDC1FF, #FFF6E3, #FFCCEA);
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 5px;
 }
