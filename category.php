@@ -126,6 +126,35 @@
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Enhance shadow effect */
 }
 
+.home {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 20px;
+   
+    background: white; /* Changes to white on hover */
+    border-radius: 8px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.home a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    display: block;
+}
+
+.home:hover {
+    background: rgb(255, 198, 43); /* Yellow background covering full section */
+}
+
+
+
 </style>
 
 
@@ -157,5 +186,11 @@
             </div>
         </div>
     </div>
+<!-- Return to Home Page Section -->
+<div class="home">
+    <a href="home.php">Return to Home Page</a>
+</div>
+
+
 </body>
 </html>
