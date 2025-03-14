@@ -5,10 +5,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $email = htmlspecialchars($_POST["email"]);
         $password = htmlspecialchars($_POST["password"]);
         echo "<script>alert('Signup successful for $fullname');</script>";
+        header("Location: home.php");
+exit;
     } elseif (isset($_POST["login"])) {
         $email = htmlspecialchars($_POST["login_email"]);
         $password = htmlspecialchars($_POST["login_password"]);
         echo "<script>alert('Login attempt for $email');</script>";
+        header("Location: home.php");
+exit;   
     }
 }
 ?>
@@ -65,7 +69,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </script>
     </section>
     <div class="home">
-      Return to <a href="index.php"> home page</a>
+      Return to <a href="index.php"> Landing page</a>
           </div>
 </body>
 </html>
