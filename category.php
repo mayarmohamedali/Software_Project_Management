@@ -138,19 +138,23 @@
 <p class="head"> please choose which category would you like to shop</p>
 </div>
 <div class="options-container">
-            <div class="card">
-                <img src="dog.webp" alt="dog">
-                <h3>Dogs</h3>
-                <button class="add-to-cart">shop</button>
-            </div>
+<div class="card">
+    <a href="dogs.php" style="text-decoration: none; color: inherit;">
+        <img src="dog.webp" alt="dog">
+        <h3>Dogs</h3>
+        <button class="add-to-cart">shop</button>
+    </a>
+</div>
 
             <div class="card">
+            <a href="cats.php" style="text-decoration: none; color: inherit;">
                 <img src="cats.png" alt="cat">
                 <h3>Cats</h3>
                 <button class="add-to-cart">shop</button>
             </div>
 
             <div class="card">
+            <a href="turtles.php" style="text-decoration: none; color: inherit;">
                 <img src="turtle.jpg" alt="turtle">
                 <h3>Turtles</h3>
                 <button class="add-to-cart">shop</button>
