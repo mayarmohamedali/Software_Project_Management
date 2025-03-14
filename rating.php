@@ -34,7 +34,7 @@
   <div class="modal" id="thankYouModal">
     <div class="modal-content">
       <h2>Thank You!</h2>
-      <p>We appreciate your feedback.</p>
+      <p>We appreciate your feedback</p>
       <button class="close-btn">Close</button>
     </div>
   </div>
