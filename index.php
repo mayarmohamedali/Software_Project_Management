@@ -350,7 +350,8 @@ url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;7
   <header>
     <h1>Rescue & Love</h1>
     <nav>
-      <a href="#slideshow-container">Home</a>
+      <a href="#slideshow-container"></a>
+      <a href="Home.php">Home</a>
       <a href="#about-us">About Us</a>
       <a href="#features">Features</a>
       <a href="#footer">Contact Us</a>
