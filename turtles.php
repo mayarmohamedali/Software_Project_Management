@@ -208,7 +208,7 @@
                     <h3>' . $turtle['name'] . '</h3>
                     <p>' . $turtle['description'] . '</p>
                     <p class="price"><strong>Price:</strong> ' . $turtle['price'] . '</p>
-                    <a href="turtle_details.php?type=' . urlencode($turtle['name']) . '" class="reserve-button">Reserve Now</a>
+                    <a href="reservation.php?type=' . urlencode($turtle['name']) . '" class="reserve-button">Reserve Now</a>
                 </div>';
             }
             ?>

@@ -80,8 +80,8 @@
       // Close modal button logic
       closeModalBtn.addEventListener("click", () => {
         modal.style.display = "none";
-        // Redirect to index.html (or your home page)
-        window.location.href = ""; // Update with your home page URL
+        // Redirect to rating.php after closing the modal
+        window.location.href = "rating.php";
       });
     });
   </script>

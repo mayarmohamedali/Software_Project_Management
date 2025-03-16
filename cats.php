@@ -208,7 +208,7 @@
                     <h3>' . $cat['name'] . '</h3>
                     <p>' . $cat['description'] . '</p>
                     <p class="price"><strong>Price:</strong> ' . $cat['price'] . '</p>
-                    <a href="cat_details.php?breed=' . urlencode($cat['name']) . '" class="reserve-button">Reserve Now</a>
+                    <a href="reservation.php?breed=' . urlencode($cat['name']) . '" class="reserve-button">Reserve Now</a>
                 </div>';
             }
             ?>

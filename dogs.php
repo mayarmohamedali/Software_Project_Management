@@ -249,7 +249,7 @@
                     <h3>' . $dog['name'] . '</h3>
                     <p>' . $dog['description'] . '</p>
                     <p class="price"><strong>Price:</strong> ' . $dog['price'] . '</p>
-                    <a href="dog_details.php?breed=' . urlencode($dog['name']) . '"> Reserve Now</a>
+                    <a href="reservation.php?breed=' . urlencode($dog['name']) . '"> Reserve Now</a>
      
                 </div>';
             }
