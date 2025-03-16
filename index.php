@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CampusCravingHub</title>
+  <title>Rescue & Love</title>
   <!-- Link to Google Fonts for a fantasy-style font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
 </head>
@@ -348,9 +348,10 @@ url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;7
 
   <!-- Header with styled title and centered links -->
   <header>
-    <h1>CampusCravingHub</h1>
+    <h1>Rescue & Love</h1>
     <nav>
-      <a href="#slideshow-container">Home</a>
+      <a href="#slideshow-container"></a>
+      <a href="Home.php">Home</a>
       <a href="#about-us">About Us</a>
       <a href="#features">Features</a>
       <a href="#footer">Contact Us</a>
@@ -362,15 +363,18 @@ url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;7
   <div class="slideshow-container" id="slideshow-container">
     <!-- Slides -->
     <div class="slide">
-      <img src="Screenshot 2024-12-23 124200.png" alt="Slide 1">
+    <img src="https://images.pexels.com/photos/372166/pexels-photo-372166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+
     </div>
     
     <div class="slide">
-      <img src="burger.jpg" alt="Slide 2">
+    <img src="https://images.pexels.com/photos/1254140/pexels-photo-1254140.jpeg"alt="Slide 2">
+
     </div>
     
     <div class="slide">
-      <img src="OIP_(2)-MbbHPn3ox-transformed.jpeg" alt="Slide 3">
+    <img src="https://images.pexels.com/photos/45170/kittens-cat-cat-puppy-rush-45170.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Slide 3">
+
     </div>
 
     <!-- Next and previous buttons -->
@@ -386,55 +390,58 @@ url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;7
     <span class="dot" onclick="setSlide(3)"></span> 
   </div>
 
-  <!-- Attention message under slideshow -->
-  <div class="attention-message" id="about-us">
-  "Crave it? Get it! Quick, tasty bites for students at CampusCravingHub!"
+ <!-- Attention message under slideshow -->
+ <div class="attention-message" id="about-us">
+  "Give a rescued pet a second chance to love! 🐾❤ Adopt with Rescue&Love and change a life forever!"
   </div>
   <div class="about-us-section">
   <div class="about-message">
     <h2>About Us</h2>
-    <p>Welcome to Campus Craving Hub, your ultimate food companion! We’re here to make student life easier by bringing all your favorite campus restaurants together in one place. Whether you're craving a quick snack between classes or a hearty meal to fuel your study sessions, we’ve got you covered.</p>  
-<p>Our mission is to simplify the way you eat on campus with easy delivery and pickup options tailored to your busy schedule. Explore a seamless platform designed to connect you with delicious food, exclusive student deals, and a hassle-free dining experience.</p>
+    <p>Welcome to *Rescue&Love*, where every pet deserves a second chance! 🐾 We’re dedicated to connecting loving families with rescued pets in need of a forever home. Whether you’re looking for a playful companion or a loyal friend, your perfect match is waiting for you.</p> 
+    <p>Our mission is to make pet adoption easy, rewarding, and full of love. Explore our platform to find adorable pets, learn about their stories, and take the first step in giving them the home they deserve. Adopt today and be part of a movement that changes lives—one rescue at a time! ❤🏡</p>
+
     <a href="#features" class="go-to-features-btn">Explore Our Features</a>
-  </div>
-  <div class="about-summary">
-    <img src="MIS logo.png" alt="Food Delivery on Campus" class="about-image">
-    <h3>All Your Campus Cravings, One Hub</h3>
-    <p>Explore menus from every university restaurant, grab exclusive student deals, and enjoy fast delivery or easy pickup.</p>
+</div>
+
+<div class="about-summary">
+    <img src="Rescue.png" alt="Rescue & Love Logo" class="about-image">
+   
+</div>
+
+
+</div>
+
+<h3>Every Pet Deserves a Loving Home</h3>
+    <p>Rescue&Love is dedicated to connecting rescued pets with caring families. Discover adorable pets looking for a second chance and take the first step toward adoption today.</p>
 </div>
 
 </div>
 
- <!-- Features Section -->
+<!-- Features Section -->
 <div class="features" id="features">
-  <h2>Features</h2>
-  <p>Campus Craving Hub is your all-in-one platform designed to make dining on campus simple and convenient. Explore menus from every university restaurant, place orders for delivery or pickup, and grab exclusive student deals. The platform allows you to track your orders in real time, saving you precious time between classes. Plus, enjoy a personalized experience with recommendations tailored to your cravings and preferences.</p>
+  <h2>Why Adopt with Rescue&Love?</h2>
+  <p>Rescue&Love makes pet adoption simple and rewarding. Browse rescued animals, learn about their stories, and start your journey toward giving them a forever home. We provide guidance, resources, and ongoing support to ensure a smooth transition for both you and your new furry friend.</p>
 </div>
+
+
 
 <!-- Photo Gallery Section with side-by-side images -->
 <div class="photo-gallery">
   <div>
-    <img src="delivery-bike.png" alt="Delivery Option">
+  <img src="Rescue.png" alt="Rescue & Love Logo" class="about-image">
     <div class="photo-caption">
-      Get your food delivered straight to you.
-      <p>Enjoy the ultimate convenience of having your favorite meals delivered wherever you are on campus. Whether you're stuck in a study session or relaxing in your dorm, we make sure your cravings are satisfied. Track your delivery in real time and enjoy hot, fresh food without the hassle of waiting in line.</p>
+      Give a pet a second chance at life.
+      <p>Every pet deserves love and care. By adopting, you're not just changing their world—you’re gaining a lifelong friend. Explore heartwarming success stories and be part of this beautiful journey.</p>
     </div>
   </div>
-  <div>
-    <img src="food-delivery.png" alt="Pickup Option">
-    <div class="photo-caption">
-      Quick and easy pickup at your convenience.
-      <p>Order ahead and skip the wait with our hassle-free pickup option. Perfect for busy students on the go, you can choose your pickup time, ensuring your meal is ready exactly when you need it. Whether you're rushing between classes or heading to a group study, we make grabbing your food quick and simple.</p>
-    </div>
-  </div>
-  <div>
-    <img src="menu.png" alt="Easy Menu Navigation">
-    <div class="photo-caption">
-      Explore easy-to-navigate menus.
-      <p>Say goodbye to confusing restaurant websites and scattered menus. With Campus Craving Hub, you can browse clear and organized menus from every campus restaurant. Easily search by cuisine, meal type, or dietary preferences to find exactly what you're looking for in seconds. Discover new favorites while saving time and effort.</p>
-    </div>
-  </div>
+  
 </div>
+
+
+
+
+  <script src="../../public/js/landing.js"></script>
+
 
 <br>
 <br>
@@ -455,7 +462,7 @@ url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;7
           <ion-icon name="logo-instagram"></ion-icon>
         </a></li>
     </ul>
-    <p>&copy;2024 CyberSecurity/DataScience Team | All Rights Reserved</p>
+    <p>&copy;DataScience Team | All Rights Reserved</p>
   </footer>
 
 
