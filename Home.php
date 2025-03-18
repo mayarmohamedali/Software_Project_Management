@@ -98,8 +98,8 @@
     <?php
     $stores = [
         ['name' => 'Pet World', 'image' => 'https://images.pexels.com/photos/8640437/pexels-photo-8640437.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', 'description' => 'Your one-stop shop for all pet needs.', 'link' => 'category.php'],
-        ['name' => 'Paws', 'image' => 'https://media.istockphoto.com/id/1892103156/photo/a-young-man-and-his-pup-at-the-pet-shop.jpg?s=1024x1024&w=is&k=20&c=dot03TmQPMH49UcFSUGAnjVA3-r5Q14cdjRqBf_JJwM=', 'description' => 'Find everything your furry friend loves.', 'link' => 'store_paws.php'],
-        ['name' => 'Adopt It', 'image' => 'https://images.pexels.com/photos/31115532/pexels-photo-31115532/free-photo-of-adorable-cocker-spaniel-looking-upward.jpeg?auto=compress&cs=tinysrgb&w=600', 'description' => 'Adopt a loving pet today!', 'link' => 'store_adoptit.php']
+        ['name' => 'Paws', 'image' => 'https://media.istockphoto.com/id/1892103156/photo/a-young-man-and-his-pup-at-the-pet-shop.jpg?s=1024x1024&w=is&k=20&c=dot03TmQPMH49UcFSUGAnjVA3-r5Q14cdjRqBf_JJwM=', 'description' => 'Find everything your furry friend loves.', 'link' => 'category.php'],
+        ['name' => 'Adopt It', 'image' => 'https://images.pexels.com/photos/31115532/pexels-photo-31115532/free-photo-of-adorable-cocker-spaniel-looking-upward.jpeg?auto=compress&cs=tinysrgb&w=600', 'description' => 'Adopt a loving pet today!', 'link' => 'category.php']
     ];
     
     foreach ($stores as $store) {
