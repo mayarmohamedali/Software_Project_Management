@@ -6,8 +6,8 @@
     <title>Dogs & Stores - Pet World!</title>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <style>
-        /* General Styles */
         body {
             background: rgb(255, 230, 180);
             font-family: Arial, sans-serif;
@@ -32,7 +32,6 @@
             font-family: 'Dancing Script', cursive;
         }
 
-        /* Dog & Store Container */
         .container-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -86,6 +85,19 @@
         .card a:hover {
             background: rgb(255, 180, 43);
         }
+
+        .location-error {
+            color: red;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #location-details {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px;
+        }
     </style>
 </head>
 <body>
@@ -94,24 +106,62 @@
             <p class="org">Pet World! - Dogs & Stores</p>
         </div>
 
+        <!-- Store Cards -->
         <div class="container-grid">
-    <?php
-    $stores = [
-        ['name' => 'Pet World', 'image' => 'https://images.pexels.com/photos/8640437/pexels-photo-8640437.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', 'description' => 'Your one-stop shop for all pet needs.', 'link' => 'category.php'],
-        ['name' => 'Paws', 'image' => 'https://media.istockphoto.com/id/1892103156/photo/a-young-man-and-his-pup-at-the-pet-shop.jpg?s=1024x1024&w=is&k=20&c=dot03TmQPMH49UcFSUGAnjVA3-r5Q14cdjRqBf_JJwM=', 'description' => 'Find everything your furry friend loves.', 'link' => 'category.php'],
-        ['name' => 'Adopt It', 'image' => 'https://images.pexels.com/photos/31115532/pexels-photo-31115532/free-photo-of-adorable-cocker-spaniel-looking-upward.jpeg?auto=compress&cs=tinysrgb&w=600', 'description' => 'Adopt a loving pet today!', 'link' => 'category.php']
-    ];
-    
-    foreach ($stores as $store) {
-        echo '<div class="card">
-            <img src="' . $store['image'] . '" alt="' . $store['name'] . '">
-            <h3>' . $store['name'] . '</h3>
-            <p>' . $store['description'] . '</p>
-            <a href="' . $store['link'] . '">Visit Store</a>
-        </div>';
-    }
-    ?>
-</div>
+        <?php
+        $stores = [
+            ['name' => 'Pet World', 'image' => 'https://images.pexels.com/photos/8640437/pexels-photo-8640437.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', 'description' => 'Your one-stop shop for all pet needs.', 'link' => 'category.php'],
+            ['name' => 'Paws', 'image' => 'https://media.istockphoto.com/id/1892103156/photo/a-young-man-and-his-pup-at-the-pet-shop.jpg?s=1024x1024&w=is&k=20&c=dot03TmQPMH49UcFSUGAnjVA3-r5Q14cdjRqBf_JJwM=', 'description' => 'Find everything your furry friend loves.', 'link' => 'category.php'],
+            ['name' => 'Adopt It', 'image' => 'https://images.pexels.com/photos/31115532/pexels-photo-31115532/free-photo-of-adorable-cocker-spaniel-looking-upward.jpeg?auto=compress&cs=tinysrgb&w=600', 'description' => 'Adopt a loving pet today!', 'link' => 'category.php']
+        ];
 
+        foreach ($stores as $store) {
+            echo '<div class="card">
+                <img src="' . $store['image'] . '" alt="' . $store['name'] . '">
+                <h3>' . $store['name'] . '</h3>
+                <p>' . $store['description'] . '</p>
+                <a href="' . $store['link'] . '">Visit Store</a>
+            </div>';
+        }
+        ?>
+        </div>
+    </div>
+
+    <!-- Location Text Info
+    <h2 style="text-align:center;">Your Current Location Details</h2>
+    <div id="location-details"></div>
+    <p id="location-error" class="location-error"></p> -->
+
+    <script>
+        function showError(message) {
+            document.getElementById('location-error').textContent = message;
+            document.getElementById('location-details').textContent = '';
+        }
+
+        // function showLocation(lat, lon) {
+        //     document.getElementById('location-details').innerHTML = `
+        //         Latitude: ${lat.toFixed(5)}<br>
+        //         Longitude: ${lon.toFixed(5)}
+        //     `;
+        // }
+
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(
+                (position) => {
+                    showLocation(position.coords.latitude, position.coords.longitude);
+                },
+                (error) => {
+                    if (error.code === 1) {
+                        showError("Location access denied");
+                    } else {
+                        showError("Unable to retrieve location. Please try again.");
+                    }
+                }
+            );
+        } else {
+            showError("Geolocation is not supported by this browser.");
+        }
+    </script>
 </body>
 </html>
+ 
