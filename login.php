@@ -1,18 +1,19 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST["signup"])) {
-        $fullname = htmlspecialchars($_POST["fullname"]);
-        $email = htmlspecialchars($_POST["email"]);
-        $password = htmlspecialchars($_POST["password"]);
-        echo "<script>alert('Signup successful for $fullname');</script>";
-        header("Location: home.php");
-exit;
+        // ... your existing signup code ...
     } elseif (isset($_POST["login"])) {
         $email = htmlspecialchars($_POST["login_email"]);
         $password = htmlspecialchars($_POST["login_password"]);
-        echo "<script>alert('Login attempt for $email');</script>";
-        header("Location: home.php");
-exit;   
+        
+        // Add this admin check (use proper authentication in real projects)
+        if (strtolower($email) === 'admin@admin.com') { // Change to your admin email
+            header("Location: admin.php");
+            exit;
+        } else {
+            header("Location: home.php");
+            exit;
+        }
     }
 }
 ?>
@@ -66,10 +67,30 @@ exit;
             signupHeader.addEventListener("click", () => {
                 wrapper.classList.remove("active");
             });
+
+
+document.querySelector('.form.login form').addEventListener('submit', function(e) {
+    const email = this.querySelector('input[name="login_email"]').value.trim().toLowerCase();
+    
+    // Optional: Client-side check (but server-side is mandatory)
+    if (email === 'admin@admin.com') {
+        e.preventDefault(); // Only prevent default for admin
+        window.location.href = 'admin.php';
+    }
+    // For regular users, let the form submit normally
+});
+
         </script>
     </section>
     <div class="home">
       Return to <a href="index.php"> Landing page</a>
           </div>
 </body>
+<video autoplay loop muted playsinline id="bg-video">
+  <source src="vid4.mp4" type="video/mp4">
+  <source src="your-video.webm" type="video/webm">
+  <!-- Fallback image if video fails -->
+  <img src="test2.avif" alt="Background">
+</video>
+
 </html>
